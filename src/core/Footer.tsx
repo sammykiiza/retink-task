@@ -1,5 +1,5 @@
 import React from 'react'
-import { facebook, instagram, linkedIn, logo, pinterest, twitter, youtube } from '../assets/images'
+import { facebook, instagram, linkedIn, logo, pinterest, twitter, youtube } from '../assets'
 
 function Footer() {
   return (

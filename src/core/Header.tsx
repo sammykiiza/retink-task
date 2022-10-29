@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo, RetikAvatar } from '../assets/images'
+import { logo, RetikAvatar } from '../assets'
 
 
 
@@ -23,7 +23,7 @@ function Header() {
         {/* Sign up form */}
         <div className='pt-4'>
           <span className='text-[#7E1CFE] text-xl font-bold'>Sign Up For The BETA!</span>
-          <form action="" method='post' className='mt-2'>
+          <form action="!#" method='' className='mt-2'>
             <div className='flex items-center'>
               <input type="text" placeholder='Business Name'
                 className='bg-[#7E1CFE02] 
@@ -52,8 +52,34 @@ function Header() {
             </div>
 
             <div className='flex items-center mx-6 my-8'>
-              <button type="submit" className='bg-[#7E1CFE] rounded-xl text-white text-sm py-2 px-6'>Notify me</button>
-              <a href="https://retink.io/fap" className='border border-[#754DE8] text-[#0085FF] underline text-sm rounded-xl py-2 px-6 ml-24'>
+              <button type="submit"
+                className='bg-[#7E1CFE] 
+                hover:bg-[#0085FF]
+                rounded-xl 
+                text-white 
+                text-sm 
+                py-2 
+                px-6 
+                ease-linear 
+                transition-all 
+                duration-200'>
+                Notify me
+              </button>
+              <a href="https://retink.io/fap" 
+              className='border 
+              border-[#754DE8]
+              hover:bg-[#754DE8]
+              hover:text-white
+              text-[#0085FF] 
+              underline 
+              text-sm 
+              rounded-xl 
+              py-2 
+              px-6 
+              ml-24
+              ease-linear 
+              transition-all 
+              duration-200'>
                 Sign up as a freelance partner
               </a>
             </div>
@@ -64,7 +90,7 @@ function Header() {
       {/* Header text left section end */}
 
       {/* Retik Avatar */}
-        <img src={RetikAvatar} className="w-[30%] mr-20" alt="retink-avatar" />
+      <img src={RetikAvatar} className="w-[30%] mr-20" alt="retink-avatar" />
     </div>
   )
 }
