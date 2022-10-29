@@ -1,7 +1,8 @@
 import React from 'react'
+import { logo, RetikAvatar } from '../assets/images'
 
-const RetikAvatar = require('../assets/images/Retink-avatar.png');
-const logo = require('../assets/images/logo.png');
+
+
 function Header() {
   return (
     <div className='bg-[#7E1CFE0D] flex justify-between'>
@@ -9,7 +10,7 @@ function Header() {
       {/* Header text left section */}
       <div className="pt-4 ml-24">
         {/* header logo */}
-        <img src={logo} className="w-[100px]" alt="logo" />
+        <a href="!#"><img src={logo} className="w-[186px]" alt="logo" /></a>
         <div className='font-bold text-4xl pt-10'>
           <span>Get Advanced AI</span><br />
           <span>+ Expert Created <span className='text-[#7E1CFE]'>Logos</span></span>
