@@ -5,7 +5,7 @@ import BlogArticleItem from './BlogArticleItem'
 function BlogArticles() {
   return (
     <div className='flex flex-col items-center space-y-10'>
-      <div className='flex space-x-2'>
+      <div className='flex-1 space-y-20 lg:space-y-4 lg:flex lg:space-x-2'>
         <BlogArticleItem
           image={blogWriting}
           title='Logos'
@@ -22,7 +22,7 @@ function BlogArticles() {
           content='Bring animated characters to life to keep your viewers engaged and  entertained.'
         />
       </div>
-      <div className='flex space-x-2'>
+      <div className='flex-1 space-y-20 lg:space-y-4 lg:flex lg:space-x-2'>
         <BlogArticleItem
           image={blogWriting}
           title='Product Demo'

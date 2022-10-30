@@ -6,9 +6,9 @@ function SignUpForm() {
             <div className='font-bold text-[#754DE8]'>Sign Up For The BETA to see more</div>
             <div>
                 <form action="!#">
-                    <div className='flex space-x-1'>
-                        <input type="text" placeholder='Business Name' className='rounded-2xl border border-[#754DE8] text-center text-[#754DE8] placeholder:text-[#754DE8] focus:outline-0 p-2 w-48' />
-                        <input type="text" placeholder='Email' className='rounded-2xl border border-[#754DE8] text-center text-[#754DE8] placeholder:text-[#754DE8] focus:outline-0 p-2 w-48' />
+                    <div className='flex-col items-center px-6 space-y-3 lg:px-0 lg:space-y-0 lg:flex-row lg:space-x-1'>
+                        <input type="text" placeholder='Business Name' className='rounded-2xl border border-[#754DE8] text-center text-[#754DE8] placeholder:text-[#754DE8] focus:outline-0 p-2 w-full lg:w-48' />
+                        <input type="text" placeholder='Email' className='rounded-2xl border border-[#754DE8] text-center text-[#754DE8] placeholder:text-[#754DE8] focus:outline-0 p-2 w-full lg:w-48' />
                     </div>
                     <div className='flex flex-col items-center space-y-6 mt-8'>
                         <button type='submit'
@@ -26,7 +26,7 @@ function SignUpForm() {
                             Notify me
                         </button>
                         <a href="https://retink.io/fap"
-                        className='border 
+                            className='border 
                         border-[#754DE8]
                         hover:bg-[#754DE8]
                         hover:text-white

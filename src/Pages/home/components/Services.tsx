@@ -4,8 +4,8 @@ import ServiceCard from './ServiceCard'
 
 function Services() {
     return (
-        <div className='flex flex-col items-center space-y-10'>
-            <div className='flex space-x-10'>
+        <div className='flex flex-col items-center px-10 lg:px-0 space-y-10'>
+            <div className='flex-1 space-y-4 lg:flex lg:space-x-10'>
                 <ServiceCard
                     image={artificialIntelligence}
                     title1={'MakeAI-assisted'}
@@ -26,7 +26,7 @@ function Services() {
                     content={'Your details are translated and sent to the AI, FP, or both (per your choice) as you relax and receive continuous updates.'}
                 />
             </div>
-            <div className='flex space-x-10'>
+            <div className='flex-1 space-y-4 lg:flex lg:space-x-10'>
                 <ServiceCard
                     image={directCustomer}
                     title1={'Receive and Review'}

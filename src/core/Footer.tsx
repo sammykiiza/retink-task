@@ -3,9 +3,9 @@ import { facebook, instagram, linkedIn, logo, pinterest, twitter, youtube } from
 
 function Footer() {
   return (
-    <div className='font-bold'>
+    <div className='font-bold w-screen'>
       {/* top footer section */}
-      <div className='flex justify-between bg-[#D0D0D0] px-20 py-10'>
+      <div className='flex justify-around bg-[#D0D0D0] mx-auto px-20 py-10'>
         <div className='flex space-x-20 items-center'>
           <div className='flex flex-col space-y-6'>
             <a href="!#"><img src={logo} className="w-[186px]" alt="logo" /></a>
@@ -37,7 +37,7 @@ function Footer() {
       {/* top footer section end */}
 
       {/* bottom footer section */}
-      <div className='flex justify-evenly bg-black h-[118px] text-white font-normal -ml-28 items-center'>
+      <div className='flex flex-col lg:flex-row justify-center lg:justify-evenly bg-black h-[118px] text-white font-normal lg:-ml-28 items-center'>
         <div>
           <span>Copyright &copy; {new Date().getFullYear()} Retink</span>
         </div>
