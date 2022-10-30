@@ -1,11 +1,13 @@
 import React from 'react'
 import { logo, RetikAvatar } from '../assets'
+import { logout } from '../firebase'
 
 
 
 function Header() {
   return (
     <div className='flex bg-[#7E1CFE0D] w-screen'>
+      
       <div className='flex flex-col lg:flex-row justify-center px-10 mx-auto'>
         {/* Header text left section */}
         <div className="mt-10 w-full lg:w-[60%]">
@@ -73,10 +75,12 @@ function Header() {
                   text-[#0085FF] 
                   underline 
                   text-sm 
+                  text-center
                   rounded-xl 
                   py-2 
-                  px-6 
-                  ml-24
+                  px-6
+                  ml-2
+                  lg:ml-24
                   ease-linear 
                   transition-all 
                   duration-200'>
@@ -84,16 +88,21 @@ function Header() {
                 </a>
               </div>
             </form>
+            <button
+            className='bg-[#7E1CFE] text-white rounded-lg px-4 py-2 ml-0 lg:ml-6 w-20'
+            onClick={() => logout()}
+          >
+            Logout
+          </button>
           </div>
           {/* Sign up form end */}
         </div>
         {/* Header text left section end */}
 
         {/* Retik Avatar */}
-        <div className='w-[80%] lg:w-[40%]'>
+        <div className='w-[80%] lg:w-[40%] flex'>
           <img src={RetikAvatar} className="" alt="retink-avatar" />
         </div>
-
       </div>
     </div>
   )

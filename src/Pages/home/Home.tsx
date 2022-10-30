@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { useNavigate } from 'react-router-dom'
 import MainLayout from '../../core/Layout/MainLayout'
+import { auth } from '../../firebase'
 import BlogArticles from './components/BlogArticles'
 import Services from './components/Services'
 import SignUpForm from './components/SignUpForm'
@@ -7,6 +10,12 @@ import TextSection from './components/TextSection'
 import Video from './components/Video'
 
 function Home() {
+  const [  user] = useAuthState(auth);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if(!user) navigate("/");
+  });
   return (
     <MainLayout>
       <div className='w-screen space-y-14 py-8'>
