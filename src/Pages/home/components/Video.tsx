@@ -3,9 +3,9 @@ import { videoPoster } from '../../../assets'
 
 function Video() {
     return (
-        <div className='flex flex-col items-center'>
-            <div className='uppercase'>explainer video</div>
-            <video src="" poster={videoPoster} className="rounded-md w-30 h-60"></video>
+        <div className='flex flex-col items-center space-y-2'>
+            <div className='uppercase text-[#7E1CFE] font-bold'>explainer video</div>
+            <video src="" poster={videoPoster} className="rounded-md h-80"></video>
         </div>
     )
 }

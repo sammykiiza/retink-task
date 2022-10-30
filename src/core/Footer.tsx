@@ -16,8 +16,8 @@ function Footer() {
           </div>
 
           <div className='flex flex-col space-y-2 mt-14'>
-            <div>Get Early Access</div>
-            <div>Provide Feedback</div>
+            <div><a href="!#" className='hover:text-white ease-linear transition-all duration-150'>Get Early Access</a></div>
+            <div><a href="!#" className='hover:text-white ease-linear transition-all duration-150'>Provide Feedback</a></div>
           </div>
         </div>
 
@@ -42,8 +42,8 @@ function Footer() {
           <span>Copyright &copy; {new Date().getFullYear()} Retink</span>
         </div>
         <div className='space-x-6'>
-          <a href="!#">Privacy Policy</a>
-          <a href="!#">Terms of Service</a>
+          <a href="!#" className='hover:text-slate-400 ease-linear transition-all duration-150'>Privacy Policy</a>
+          <a href="!#" className='hover:text-slate-400 ease-linear transition-all duration-150'>Terms of Service</a>
         </div>
       </div>
       {/* bottom footer section end */}

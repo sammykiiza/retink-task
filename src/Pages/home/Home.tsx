@@ -9,7 +9,7 @@ import Video from './components/Video'
 function Home() {
   return (
     <MainLayout>
-      <div className='w-full space-y-10 py-8'>
+      <div className='w-full space-y-14 py-8'>
         <Video />
         <Services />
         <TextSection
