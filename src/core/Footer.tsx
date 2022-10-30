@@ -39,7 +39,7 @@ function Footer() {
       {/* bottom footer section */}
       <div className='flex justify-evenly bg-black h-[118px] text-white font-normal -ml-28 items-center'>
         <div>
-          <span>Copyright &copy; 2021 Retink</span>
+          <span>Copyright &copy; {new Date().getFullYear()} Retink</span>
         </div>
         <div className='space-x-6'>
           <a href="!#">Privacy Policy</a>
