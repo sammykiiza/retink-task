@@ -5,7 +5,7 @@ import { logo, RetikAvatar } from '../assets'
 
 function Header() {
   return (
-    <div className='bg-[#7E1CFE0D] flex justify-between'>
+    <div className='bg-[#7E1CFE0D] flex'>
 
       {/* Header text left section */}
       <div className="pt-4 ml-24">
@@ -90,7 +90,7 @@ function Header() {
       {/* Header text left section end */}
 
       {/* Retik Avatar */}
-      <img src={RetikAvatar} className="w-[30%] mr-20" alt="retink-avatar" />
+      <img src={RetikAvatar} className="hidden xl:block md:w-[30%] md:mr-20" alt="retink-avatar" />
     </div>
   )
 }
