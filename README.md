@@ -8,7 +8,7 @@ The project has a basic authentication system using google firebase.
 
 It is created using react-typescript.
 
-The project is hosted here: https://deploy--cerulean-alpaca-2894db.netlify.app/ (make sure to register before loggin in).
+The project is hosted here: https://deploy--cerulean-alpaca-2894db.netlify.app/ (make sure to register before logging in).
 
 ## Project scripts
 
